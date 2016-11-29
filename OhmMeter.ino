@@ -3,7 +3,7 @@ float V;
 float Vin = 5;
 float Vout= 0;
 float R1= 10;
-int R2= 0;
+float R2= 0;
 
 
 void setup()
@@ -14,7 +14,7 @@ Serial.begin(9600);
 void loop()
 {
 V= analogRead(A0);
-Serial.print("V : ");
+Serial.print("Data yang kebaca: ");
 Serial.println(V);
 Vout= (V*Vin)/1023;
 Serial.print("Vout: ");
